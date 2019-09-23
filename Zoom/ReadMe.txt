@@ -1,0 +1,1 @@
+auto-rotate screen for unity via script

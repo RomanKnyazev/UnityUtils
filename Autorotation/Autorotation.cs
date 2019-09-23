@@ -6,9 +6,8 @@ namespace Assets.Utils
 {
     public sealed class Autorotation : MonoBehaviour
     {
-        public static event System.Action<ScreenOrientation> onOrientationChanged;
-
-        public bool _portrait, _portraitReversed, _landscape, _landscapeReversed;
+        [SerializeField] private static event System.Action<ScreenOrientation> onOrientationChanged;
+        [SerializeField] private bool _portrait, _portraitReversed, _landscape, _landscapeReversed;
 
         private void OnEnable() => Set();
 
